@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="a gift for Yeeli for turning 24">
+    <link rel="icon" type="image/x-icon" href="../src/cake-icon.png">
+    <link rel="stylesheet" type="text/css" href="ybg2025-dgtlp.css">
+    <title>another gift</title>
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="header-nav">
+            <header>
+                <h1>something special</h1>
+                <h2>(main)</h2>
+            </header>
+            <nav>
+                <button onclick="displayNav()">menu</button>
+                <ul id="links">
+                    <li><a href="../index.html">appetizer</a></li>
+                    <li><a href="ybg2025-dgtlp.html">main</a></li>
+                    <li>dessert <span class="locked-text">(locked...)</span></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <img src="../src/dotted-miffy.png" alt="dotted miffy" id="miffy-head" onclick="miffyText()">
+            <p id="miffy-text">happy<br>birthday!</p>
+            <!-- Content specific to main -->
+            <div id="image12" class="image-container">
+                <img src="../src/yeeli1.jpg" alt="yeeli sitting on a bench" id="one">
+                <img src="../src/yeeli2.jpg" alt="yeeli sitting on a rock" id="two">
+            </div>
+            <div id="message">
+                <h3>main</h3>
+                <p>
+                    Hello Miss Yeeli!<br><br>
+                    Happy 24th birthday! I hope your day has been special so far, and I hope that this
+                    makes it even better. I think sometimes on birthdays it can be easy to get worried
+                    and overwhelmed with everything happening right now or everything that might be coming
+                    up, so I wanted to share with you a recipe to soothe your mind:<br>
+                    (1) Something sweet: little messages, like "I love you" or "I miss you" or "oo la la"
+                    or "hey you"<br>
+                    (2) Something savory: memories, like building Lego cacti together or eating a delicious
+                    fruit tart in Rhode Island or making Buldak at dining hall or winning every claw
+                    machine <br>
+                    (3) Something special: you, the most thoughtful, cheerful, optimistic, persevering,
+                    generous, beautiful person I know<br>
+                    As you go into the busy, busy world this coming year, I hope you continue remembering
+                    the little moments that bring you joy. Wishing you all the best!<br><br>
+                    Love,<br>
+                    Sammy
+                </p>
+            </div>
+            <div id="image34" class="image-container">
+                <img src="../src/yeeli3.jpg" alt="yeeli winning a plush" id="three">
+                <img src="../src/yeeli4.jpg" alt="yeeli at the park" id="four">
+            </div>
+            <div id="password-check">
+                <label for="input">are you ready for dessert?</label>
+                <input type="text" id="input" placeholder="yes/no/maybe">
+                <button onclick="checkPw()">check</button>
+                <p id="good-output">
+                    oo la la!
+                    <a href="../dessert/ybg2025-itgt.html">
+                        dessert
+                    </a>
+                </p>
+                <p id="bad-output">
+                    i think you spelled "yes" wrong :)
+                </p>
+            </div>
+        </main>
+        <footer>
+            <p>All rights reserved. <a href="../credits/ybg2025-credits.html">Credits</a> &#169;</p>
+        </footer>
+    </div>
+    <script src="ybg2025-dgtlp.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="a gift for Yeeli for turning 24">
+    <link rel="icon" type="image/x-icon" href="src/cake-icon.png">
+    <link rel="stylesheet" type="text/css" href="ybg2025-home.css">
+    <title>another gift</title>
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="header-nav">
+            <header>
+                <h1>something special</h1>
+                <h2>(appetizer)</h2>
+            </header>
+            <nav>
+                <button onclick="displayNav()">menu</button>
+                <ul id="links">
+                    <li><a href="index.html">appetizer</a></li>
+                    <li>main <span class="locked-text">(locked...)</span></li>
+                    <li>dessert <span class="locked-text">(locked...)</span></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <img src="src/dotted-miffy.png" alt="dotted miffy" id="miffy-head" onclick="miffyText()">
+            <p id="miffy-text">no<br>hints<br>here!</p>
+            <!-- Content specific to appetizer -->
+            <div id="riddle">
+                <h3>an appetizer</h3>
+                <p>something simple something dear,</p>
+                <p>something special for the ear.</p>
+                <p>a melody so soft and light,</p>
+                <p>three words before sleeping tight.</p>
+            </div>
+            <div id="password-check">
+                <label for="input">please enter the password:</label>
+                <input type="text" id="input" placeholder="type here...">
+                <button onclick="checkPw()">check</button>
+                <p id="good-output">
+                    i love you too!
+                    click here for a treat:
+                    <a href="main/ybg2025-dgtlp.html">
+                        main dish
+                    </a>
+                </p>
+                <p id="bad-output">
+                    hmm... try using your brain this time...
+                </p>
+            </div>
+        </main>
+        <footer>
+            <p>All rights reserved. <a href="credits/ybg2025-credits.html">Credits</a> &#169;</p>
+        </footer>
+    </div>
+    <script src="ybg2025-home.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    box-sizing:border-box;
+}
+
+@font-face {
+    font-family: lavish;
+    src: url("src/LavishlyYours-Regular.ttf");
+}
+
+/* styling page border */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: 2px dashed black;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+/* miffy head and text */
+#miffy-head {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    max-width: 5%;
+    cursor: pointer;
+}
+
+#miffy-text {
+    position: fixed;
+    bottom: 5%;
+    right: 7.5%;
+    border: 1px dashed black;
+    padding: 0.5%;
+    visibility: hidden;
+    font: calc(10px + 1vw) monospace;
+    background-color: #fffbed;
+}
+
+#miffy-text.active {
+    visibility: visible;
+}
+
+/* header */
+h1 {
+    text-align: center;
+    font: bold calc(10px + 3vw) monospace;
+    margin: 1%;
+}
+
+h2 {
+    text-align: center;
+    font: bold calc(10px + 1vw) monospace;
+    margin: 1%;
+}
+
+/* nav */
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 1vh 1vw;
+    font: calc(10px + 1vw) monospace;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+#links {
+    padding: 0;
+    visibility: hidden;
+    text-indent: 40vw;
+    transition: text-indent 0.5s ease-in-out;
+    margin-top: 1vh;
+}
+
+li{
+    font: calc(10px + 1vw) monospace;
+    padding: 0.5%;
+}
+
+button.active {
+    transform: translateX(-20vw);
+}
+
+#links.active {
+    visibility: visible;
+    text-indent: 25vw;
+}
+
+#header-nav {
+    height: 100vh;
+}
+
+/* main */
+#riddle {
+    display: block;
+    margin: 5vh 20vw;
+    padding: 1%;
+    border: 1px dashed black;
+}
+
+#riddle h3 {
+    text-align: center;
+    margin: 1%;
+    font: bold calc(10px + 3vw) lavish, monospace;
+}
+
+#riddle p {
+    text-align: center;
+    margin: 1%;
+    font: calc(10px + 3vw) lavish, monospace;
+}
+
+#password-check {
+    display: block;
+    margin: 40vh 0;
+}
+
+#password-check label {
+    display: block;
+    text-align: center;
+    font: bold calc(10px + 1vw) monospace;
+}
+
+#password-check input {
+    display: block;
+    margin: 3vh auto;
+    padding: 1%;
+    text-align: center;
+    font: calc(10px + 1vw) monospace;
+}
+
+#password-check button {
+    display: block;
+    margin: 0 auto;
+    padding: 1vh 1vw;
+    font: calc(10px + 1vw) monospace;
+    cursor: pointer;
+}
+
+#good-output {
+    padding: 1%;
+    display: none;
+    visibility: hidden;
+    text-align: center;
+    font: calc(10px + 1vw) monospace;
+    color: #c90036;
+}
+
+#bad-output {
+    padding: 1%;
+    display: block;
+    visibility: hidden;
+    text-align: center;
+    font: calc(10px + 1vw) monospace;
+    color: #c90036;
+}
+
+/* footer */
+footer p {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 0.5%;
+    border-top: 1px dashed black;
+    text-align: center;
+    font: calc(5px + 0.5vw) monospace;
+}
+
+/* buttons, inputs, links, span text, etc. */
+button {
+    background-color: transparent;
+    border: 1px dashed black;
+}
+
+button:hover {
+    background-color: #fffbed;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fffbed;
+}
+
+a {
+    color: #2b75ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.locked-text {
+    color: #7a7a7a;
+}
+
+/* colors */
+body::before {
+    background-image: linear-gradient(to bottom right, white, #ffbad6);
+    z-index: -1;
+}
